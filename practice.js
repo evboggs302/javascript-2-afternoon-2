@@ -89,9 +89,9 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
   Return an array that contains the even numbers from the nums array.
 */
 
-function hotty(nums) {
+function evenFinder(nums) {
   var newArr =[];
-  for(let i = 0; i > nums.length; i++){
+  for(let i = 0; i < nums.length; i++){
     if(nums[i] % 2 === 0){
       newArr.push(nums[i]);
     }
@@ -126,7 +126,21 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
   and the second item in the array being the odds array (all the odd values from numbersArray).
 */
 
-//Code Here
+function divider(numbersArray){
+  var evenArr = [];
+  var oddArr = [];
+  var comboArr = [];
+  for(let i=0; i<numbersArray.length; i++){
+    if(numbersArray[i] % 2 === 0){
+      evenArr.push(numbersArray[i])
+    }else if(numbersArray[i] % 2 !== 0){
+      oddArr.push(numbersArray[i])
+    }
+  } 
+  comboArr.push(evenArr);
+  comboArr.push(oddArr);
+  return comboArr
+}
 
 
 
