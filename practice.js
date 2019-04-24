@@ -163,7 +163,14 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
-
+function finder(arr){
+  var randomNumber = getRandomArbitrary()
+  for(let i=0; i<arr.length; i++){
+      if(arr[i] === randomNumber){
+        return true;
+      }
+  }return false;
+}
 
 
 ////////// PROBLEM 8 //////////
