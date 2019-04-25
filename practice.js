@@ -254,7 +254,14 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
   Your output should look like this -> [15, 19, 26, 29, 35, 44, 58]
 */
   
-//Code Here
+//Code here
+function addTen(numbers){
+  for(let i=0; i<numbers.length; i++){
+    numbers[i] = parseInt(numbers[i]) +10
+  }
+  return numbers;
+}
+
 
 
 
@@ -279,7 +286,14 @@ for(var i = 0; i < num2; i++){
   Return the longer of the two arrays.
 */
 
-//Code Here
+//Code here
+function longer(arr1, arr2){
+  if(arr1.legnth > arr2.length){
+        return arr1;
+   }
+   
+        return arr2;
+      }
 
 
 
