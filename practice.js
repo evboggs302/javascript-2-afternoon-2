@@ -203,12 +203,15 @@ function removeItem(myGroceryList, item){
   if(myGroceryList && item){
     for(let i=0; i<myGroceryList.length; i++){
       if(myGroceryList[i] === item){
-        myGroceryList.splice()
+        myGroceryList = myGroceryList.shift(i)
       }
     }
-  }
+  }return myGroceryList;
 }
 
+function addItem(){
+  
+}
 
 ////////// PROBLEM 9 //////////
 
@@ -217,7 +220,13 @@ function removeItem(myGroceryList, item){
 */
 
 //Code Here
-
+function maker(){
+  var arrMaker = [];
+  for(let i=1; i<216; i++){
+    arrMaker.push(i);
+  }
+  return arrMaker
+}
 
 
 ////////// PROBLEM 10 //////////
