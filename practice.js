@@ -291,7 +291,7 @@ function longer(arr1, arr2){
   if(arr1.legnth > arr2.length){
         return arr1;
    }
-   
+
         return arr2;
       }
 
@@ -305,7 +305,19 @@ function longer(arr1, arr2){
   Example: var arr1 = [1,2,3,4]; var arr2 = [2,4,5,6]; newArray // [2,4]
 */
 
-//Code Here
+//Code here
+function both(arr1, arr2){
+  var both2 = [];
+  for(let a=0; a<arr1.length; a++){
+    for(let b=0; b<arr2.length; b++){
+      if(arr1[a] === arr2[b]){
+        both2.push(arr2[b])
+      }
+    }
+  }
+return both2;
+}
+
 
 
 
@@ -346,6 +358,8 @@ var colt = {
 */
 
 //Code Here
+devMountainEmployees = [joe, cahlan, ryan, colt];
+
 
 
 
@@ -355,6 +369,11 @@ var colt = {
 */
 
 //Code Here
+for(let i=0; i<devMountainEmployees.length; i++){
+  if(devMountainEmployees[i] === cahlan){
+    devMountainEmployees.splice(i, 1);
+    }
+}
 
 
 
