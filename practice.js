@@ -203,15 +203,28 @@ function removeItem(myGroceryList, item){
   if(myGroceryList && item){
     for(let i=0; i<myGroceryList.length; i++){
       if(myGroceryList[i] === item){
-        myGroceryList = myGroceryList.shift(i)
+        myGroceryList.shift(i);
       }
     }
-  }return myGroceryList;
+  }else {
+    return [];
+  }
+  return myGroceryList;
 }
 
-function addItem(){
-  
+function addItem(myGroceryList, item){
+  if(myGroceryList && item){
+    myGroceryList.push(item);
+  }else {
+    return [];
+  }
+  return myGroceryList;
 }
+
+
+
+//myGroceryList.push(item);
+
 
 ////////// PROBLEM 9 //////////
 
