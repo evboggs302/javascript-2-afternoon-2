@@ -386,6 +386,7 @@ for(let i=0; i<devMountainEmployees.length; i++){
 */
 
 //Code Here
+var users = [];
 
 
 
@@ -405,6 +406,21 @@ var user1 = {
 // Do not edit the code above.
 
 //Code Here
+var user2 = {
+  name: 'Joe Baby',
+  email: 'joe.baby@gmail.com',
+  password: 'mommy2',
+  username: 'babyjoe'
+}
+
+var user3 = {
+  name: 'Hector Macho',
+  email: 'hecotr.macho@gmail.com',
+  password: 'daddysgirl2',
+  username: 'machohector'
+}
+
+users = [user1, user2, user3];
 
 
 
@@ -419,7 +435,12 @@ var user1 = {
 */
 
 //Code Here
-
+for(let i=0; i<users.length; i++){
+  if(users[i].email === 'mark.mciver@devmounta.in'){
+    users.splice(i, 1);
+  }
+  
+} 
 
 
 /*
